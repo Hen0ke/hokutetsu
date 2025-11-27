@@ -26,44 +26,44 @@ author: 'Hokutetsu Railway. (fiction)'
         <h2 id="sec1">会社概要</h2>
         <table class="table-vertical">
             <tr>
-                <th>会社名</th>
-                <td>北圏鉄道株式会社（英語名　Hokutetsu Railway Co.,Ltd.）</td>
+                <th><p><span class="point-bold">会社名</span></p></th>
+                <td><p>北圏鉄道株式会社（英語名　Hokutetsu Railway Co.,Ltd.）</p></td>
             </tr>
             <tr>
-                <th>設立年月日</th>
-                <td>1929年2月3日</td>
+                <th><p><span class="point-bold">設立年月日</span></p></th>
+                <td><p>1929年2月3日</p></td>
             </tr>
             <tr>
-                <th>本社所在地</th>
-                <td>北圏道北圏市北原区中新町1丁目5番22号</td>
+                <th><p><span class="point-bold">本社所在地</span></p></th>
+                <td><p>北圏道北圏市北原区中新町1丁目5番22号</p></td>
             </tr>
             <tr>
-                <th>資本金</th>
-                <td>100百万円</td>
+                <th><p><span class="point-bold">資本金</span></p></th>
+                <td><p>100百万円</p></td>
             </tr>
             <tr>
-                <th>事業内容</th>
-                <td>鉄軌道事業および旅客誘致に係る事業および印刷事業</td>
+                <th><p><span class="point-bold">事業内容</span></p></th>
+                <td><p>鉄軌道事業および旅客誘致に係る事業および印刷事業</p></td>
             </tr>
             <tr>
-                <th>事業所所在地</th>
-                <td>鉄道局 北圏営業局<br>北圏道北圏市北原区中新町1丁目5番22号<br>鉄道局 端橋営業局<br>川前府川前市端橋区端橋4丁目2番12号<br>鉄道局 海塚営業局<br>福手県海塚市新葉町網台7丁目1番49号<br>鉄道局 貨物営業局<br>北圏道白鷹市東区小杉町 2丁目451番地32号</td>
+                <th><p><span class="point-bold">事業所所在地</span></p></th>
+                <td><p>鉄道局 北圏営業局<br>北圏道北圏市北原区中新町1丁目5番22号</p><p>鉄道局 端橋営業局<br>川前府川前市端橋区端橋4丁目2番12号</p><p>鉄道局 海塚営業局<br>福手県海塚市新葉町網台7丁目1番49号</p><p>鉄道局 貨物営業局<br>北圏道白鷹市東区小杉町 2丁目451番地32号</p></td>
             </tr>
             <tr>
-                <th>鉄道営業キロ</th>
-                <td>600km</td>
+                <th><p><span class="point-bold">鉄道営業キロ</span></p></th>
+                <td><p>600km</p></td>
             </tr>
             <tr>
-                <th>駅数</th>
-                <td>300駅</td>
+                <th><p><span class="point-bold">駅数</span></p></th>
+                <td><p>300駅</p></td>
             </tr>
             <tr>
-                <th>車両数</th>
-                <td>3123両</td>
+                <th><p><span class="point-bold">車両数</span></p></th>
+                <td><p>3123両</p></td>
             </tr>
             <tr>
-                <th>従業員数</th>
-                <td>6289人</td>
+                <th><p><span class="point-bold">従業員数</span></p></th>
+                <td><p>6289人</p></td>
             </tr>
         </table>
         <p>※架空の企業です。すべて実在しません。</p>

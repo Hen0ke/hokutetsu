@@ -101,21 +101,22 @@ ul {
 
 .table-vertical {
     margin: 0 10px;
-    width: 100%;
+    width: calc(100% - 20px);
     border-collapse: collapse;
+    margin: 5px 10px;
 
     tr {
         th {
             border-bottom: gray 1px solid;
             width: 25%;
-            padding: 25px 25px;
+            padding: 15px 15px;
             font-weight: 500;
             text-align: left;
         }
         td {
             border-bottom: gray 1px solid;
             width: 75%;
-            padding: 25px 25px;
+            padding: 15px 15px;
             font-weight: 400;
             text-align: left;
         }
@@ -170,7 +171,7 @@ header {
 
             ul {
                 padding: 0;
-                    margin: 0;
+                margin: 0;
             }
 
             .header-list-item {
@@ -183,7 +184,7 @@ header {
 
                 list-style: none;
                 float: left;
-                padding: 27px 0;
+                padding: 26px 0;
                 width: 25%;
                 text-align: center;
                 color: #444;
