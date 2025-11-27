@@ -5,7 +5,7 @@
 
 $mainColor: #0058af;
 $mainColorBright: #1870c9;
-$mainColorLight: #e1ebf1;
+$mainColorLight: #e5edf3;
 $subColor: #856deb;
 $subColorBright: #9581f0;
 $backgroundColor: #f0f4ff;
@@ -24,6 +24,7 @@ body {
 article {
     .normal-section {
         background-color: $mainColorLight;
+        padding: 10px 0;
 
         .contents {
             max-width: 1280px;
@@ -43,11 +44,59 @@ h2 {
     font-weight: 500;
 }
 
+h3 {
+    margin: 30px 10px 10px 10px;
+    padding: 8px 15px;
+    font-size: 24px;
+    font-weight: 500;
+
+    border-left: $mainColor 5px solid;
+}
+
 p {
-    padding: 10px 5px;
+    padding: 2px 10px;
     font-size: 16px;
     font-weight: 400;
-    margin: 10px;
+    margin: 5px 10px;
+    line-height: 1.6em;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;
+}
+
+ul {
+    margin: 5px 10px;
+    padding: 2px 10px 2px 28px;
+
+    li {
+        line-height: 1.8em;
+    }
+}
+
+.point-bold {
+    font-weight: 500;
+}
+
+.img-display-side {
+    display: flex;
+
+    .img {
+        flex: 1;
+        margin: 5px 10px;
+        padding: 2px 10px;
+
+        img {
+            max-width: 100%;
+            border: $textColorBlack 1px solid;
+        }
+    }
+
+    .img-text {
+        flex: 2;
+        max-width: 100%;
+    }
 }
 
 .table-vertical {
@@ -69,6 +118,22 @@ p {
             padding: 25px 25px;
             font-weight: 400;
             text-align: left;
+        }
+    }
+}
+
+.page-title {
+    background-color: $mainColor;
+
+    .contents {
+        padding: 90px 10px;
+        max-width: 1280px;
+        color: $textColorWhite;
+        margin: 0 auto;
+
+        h1 {
+            font-size: 50px;
+            font-weight: 200;
         }
     }
 }
@@ -100,12 +165,21 @@ header {
         .header-list {
             float: right;
             width: 70%;
+            padding: 0;
+            margin: 0;
+
+            ul {
+                padding: 0;
+                    margin: 0;
+            }
 
             .header-list-item {
                 cursor: pointer;
                 user-select: none;
                 -moz-user-select: none;
                 -webkit-user-select: none;
+                padding: 0;
+                margin: 0;
 
                 list-style: none;
                 float: left;
@@ -137,6 +211,33 @@ header {
                     vertical-align: -9px;
                 }
             }
+        }
+    }
+}
+
+.mokuji {
+    background-color: $textColorWhite;
+
+    .contents {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 30px 10px;
+
+        a {
+            padding: 3px 20px;
+            border-right: 3px gray solid;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 18px;
+            color: $textColorBlack;
+
+            span {
+                vertical-align: -5px;
+            }
+        }
+
+        .last {
+            border: none;
         }
     }
 }
@@ -178,18 +279,25 @@ header.scrolled {
                     text-decoration: none;
                 }
                 
-                li {
-                    list-style: none;
-                    transition: all 0.3s;
-                    
-                    a {
-                        display: block;
-                        color: $textColorWhite;
-                        text-decoration: none;
-                        padding: 5px 20px;
-                        font-size: 17px;
-                        font-weight: 400;
-                        transition: all 0.5s;
+                ul {
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style: none;
+                        transition: all 0.3s;
+                        padding: 0;
+                        margin: 0;
+                        
+                        a {
+                            display: block;
+                            color: $textColorWhite;
+                            text-decoration: none;
+                            padding: 5px 20px;
+                            font-size: 17px;
+                            font-weight: 400;
+                            transition: all 0.5s;
+                        }
                     }
                 }
 
@@ -217,7 +325,15 @@ header.scrolled {
                         margin-bottom: 2px;
                     }
                     
+                    ul {
+                        padding: 0;
+                        margin: 0;
+                    }
+
                     li {
+                        padding: 0;
+                        margin: 0;
+
                         list-style: none;
                         transition: color 0.3s;
                         margin-bottom: 2px;
@@ -295,7 +411,7 @@ header.scrolled {
     }
 
     .header-menu-railway {
-        height: 350px;
+        height: 370px;
     }
 
     .header-menu-corporation {
@@ -314,6 +430,23 @@ header.scrolled {
 
 .header-menu-element.active {
     display: block;
+}
+
+footer { 
+    background-color: $mainColor;
+
+    .contents {
+        margin: 0 auto;
+        max-width: 1280px;
+        padding: 10px 10px 8px 10px;
+
+        p {
+            margin: 0;
+            padding: 0;
+            color: $textColorWhite;
+            font-weight: 500;
+        }
+    }
 }
 
 article {
