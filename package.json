@@ -9,6 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.14.1"
+    "astro": "^5.14.1",
+    "remark-heading-id": "^1.0.1",
+    "sass": "^1.93.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.33"
   }
 }

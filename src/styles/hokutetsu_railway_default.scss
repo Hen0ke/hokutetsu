@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$mainColor: #0058af;
+$mainColorBright: #1870c9;
+$mainColorLight: #e1ebf1;
+$subColor: #856deb;
+$subColorBright: #9581f0;
+$backgroundColor: #f0f4ff;
+$textColorWhite: #fefefe;
+$textColorBlack: #1d1d1d;
+
+h2, h3, h4 {
+    scroll-margin-top: 100px;
+}
+
+body {
+    font-family: "Noto Sans JP", sans-serif;
+    color: $textColorBlack;
+}
+
+article {
+    .normal-section {
+        background-color: $mainColorLight;
+
+        .contents {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+    }
+}
+
+h2 {
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, $subColor, $subColorBright 8%, $mainColor 8% 100%) 1;
+
+    margin: 30px 10px;
+    padding: 15px;
+    font-size: 30px;
+
+    font-weight: 500;
+}
+
+p {
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+.table-vertical {
+    margin: 0 10px;
+    width: 100%;
+    border-collapse: collapse;
+
+    tr {
+        th {
+            border-bottom: gray 1px solid;
+            width: 25%;
+            padding: 25px 25px;
+            font-weight: 500;
+            text-align: left;
+        }
+        td {
+            border-bottom: gray 1px solid;
+            width: 75%;
+            padding: 25px 25px;
+            font-weight: 400;
+            text-align: left;
+        }
+    }
+}
+
+header {
+    transition: box-shadow 0.3s;
+    width: 100%;
+    position: sticky;
+    top: 0;
+
+    background-color: $textColorWhite;
+
+    .header-element {
+        width: 90%;
+        max-width: 1400;
+        margin: 0 auto;
+        height: 89px;
+    
+
+        .header-logo {
+            width: 178px;
+            float: left;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .header-list {
+            float: right;
+            width: 70%;
+
+            .header-list-item {
+                cursor: pointer;
+                user-select: none;
+                -moz-user-select: none;
+                -webkit-user-select: none;
+
+                list-style: none;
+                float: left;
+                padding: 27px 0;
+                width: 25%;
+                text-align: center;
+                color: #444;
+                font-size: 20px;
+                transition: all 0.2s;
+
+                span {
+                    vertical-align: -9px;
+                    font-size: 35px;
+                    transition: all 0.2s;
+                }
+            }
+
+            .header-list-item:hover {
+                background-color: $mainColor;
+                color: #eee;
+            }
+
+            .header-list-item.clicked{
+                background-color: $mainColor;
+                color: #eee;
+
+                span {
+                    transform: rotate(180deg);
+                    vertical-align: -9px;
+                }
+            }
+        }
+    }
+}
+
+header.scrolled {
+    box-shadow: 0px 10px 10px #ccc;
+}
+
+.header-menu {
+    position: fixed;
+    top: 89px;
+    width: 100%;
+    display: none;
+
+    .header-menu-element {
+        background-color: #eee;
+        display: none;
+
+        .header-menu-element-content {
+            width: 90%;
+            max-width: 1400px;
+            margin: 0 auto;
+            overflow: hidden;
+            display: flex;
+            height: 100%;
+
+            .header-menu-left {
+                background-color: $mainColor;
+                padding: 10px;
+                height: 100%;
+                flex: 1;
+
+                .list-top {
+                    display: block;
+                    padding: 10px 20px;
+                    color: $textColorWhite;
+                    font-size: 25px;
+                    font-weight: 500;
+                    text-decoration: none;
+                }
+                
+                li {
+                    list-style: none;
+                    transition: all 0.3s;
+                    
+                    a {
+                        display: block;
+                        color: $textColorWhite;
+                        text-decoration: none;
+                        padding: 5px 20px;
+                        font-size: 17px;
+                        font-weight: 400;
+                        transition: all 0.5s;
+                    }
+                }
+
+                li:hover, .list-top:hover {
+                    background-color: $mainColorBright;
+                }
+            }
+
+            .header-menu-center {
+                background-color: $backgroundColor;
+                padding: 10px;
+                height: 100%;
+                flex: 1;
+
+                .header-menu-center-element{
+                    display: none;
+
+                    .list-top {
+                        display: block;
+                        padding: 10px 20px;
+                        color: $textColorBlack;
+                        font-size: 25px;
+                        font-weight: 500;
+                        text-decoration: none;
+                        margin-bottom: 2px;
+                    }
+                    
+                    li {
+                        list-style: none;
+                        transition: color 0.3s;
+                        margin-bottom: 2px;
+                        
+                        a {
+                            display: block;
+                            color: $textColorBlack;
+                            text-decoration: none;
+                            padding: 5px 20px;
+                            font-size: 17px;
+                            font-weight: 400;
+                            transition: color 0.3s;
+                        }
+                    }
+
+                    li:hover, .list-top:hover {
+                        color: $subColorBright;
+                        margin-bottom: 0px;
+                        border-bottom: $subColor 2px solid;
+
+                        a {
+                            color: $subColorBright;
+                        }
+                    }
+                }
+
+                .header-menu-center-element.active {
+                    display: block;
+                }
+            }
+
+            .header-menu-right {
+                background-color: $backgroundColor;
+                padding: 10px;
+                height: 100%;
+                flex: 1;
+
+                .element {
+                    margin: 5px;
+
+                    a {
+                        display: block;
+                        padding: 20px;
+                        border: $subColor 3px solid;
+                        background-color: $textColorWhite;
+                        color: $subColor;
+                        text-align: center;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        font-weight: 400;
+                        font-size: 20px;
+                        transition: all 0.3s;
+
+                        span {
+                            font-size: 40px;
+                        }
+                    }
+                }
+
+                .side-parallel {
+                    display: flex;
+
+                    .element {
+                        flex: 1;
+                    }
+                }
+                
+                .element a:hover {
+                    background-color: $subColorBright;
+                    border: $subColorBright 3px solid;
+                    color: $textColorWhite;
+                }
+            }
+        }
+    }
+
+    .header-menu-railway {
+        height: 350px;
+    }
+
+    .header-menu-corporation {
+        height: 340px;
+    }
+
+    .header-menu-shadow {
+        background-color: rgba(150, 150, 150, 0.5);
+        height: 1000px;
+    }
+}
+
+.header-menu.active {
+    display: block;
+}
+
+.header-menu-element.active {
+    display: block;
+}
+
+article {
+    margin-top: 5px;
+}
+
+.train-status {
+
+    .line-zone-tab ul {
+        display: flex;
+        margin: 0 20px 5px 20px;
+
+        li {
+            flex: 1;
+            margin: 0 10px;
+            list-style: none;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: $mainColorLight;
+            color: $mainColor;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+    }
+
+    .train-status-contents {
+        display: flex;
+        height: calc(100vh - 200px);
+
+        .line-list {
+            flex: 1;
+            background-color: $backgroundColor;
+            border-right: gray 3px solid;
+
+            .line-type-tab ul {
+                display: flex;
+                border-bottom: $textColorBlack 3px solid;
+            
+                li {
+                    flex: 1;
+                    list-style: none;
+                    text-align: center;
+                    padding: 10px;
+                    font-size: 20px;
+                    border-radius: 10px 10px 0 0;
+                    background-color: $mainColor;
+                    color: $textColorWhite;
+                    font-weight: 400;
+                    margin: 0 2px;
+                    cursor: pointer;
+                    user-select: none;
+                    -moz-user-select: none;
+                    -webkit-user-select: none;
+                }
+            }
+
+            .lines {
+                overflow-y: scroll;
+                height: calc(100% - 50px);
+
+                .element {
+                    border-bottom: $textColorBlack 1px solid;
+                    padding: 20px 10px;
+                    font-size: 30px;
+                    font-weight: 400;
+
+                    .status-icon {
+                        font-size:60px;
+                        vertical-align: -20px;
+                    }
+
+                    .status-open {
+                        color: $mainColor;
+                    }
+
+                    .status-close {
+                        color: red;
+                    }
+
+                    .status-warning {
+                        color: rgb(206, 161, 13);
+                    }
+
+                    p {
+                        font-size: 18px;
+                        text-align: center;
+                    }
+
+                    .description {
+                        font-size: 15px;
+                        text-align: left;
+                        padding-top: 10px;
+                    }
+                }
+            }
+        }
+
+        .routemap {
+            flex: 4;
+            overflow-y: auto;
+
+            svg {
+                height: 100%;
+                width: auto;
+                display: block;
+                margin: 0 auto;
+
+                .kawashimo2,.kawashimo1,.kawashimo3,.kawashimo4,.airport,.hachishiro,.tansui1,.tansui2,.tansui3 {
+                    fill: red !important;
+                }
+
+                .kawashimo5,.kawashimo6,.tansui5,.isei4,.teragawa1,.teragawa2,.teragawa3,.funanan,.funasai1,.funasai2,.fusu2 {
+                    fill: blue !important;
+                }
+            }
+        }
+    }
+}
+
+.station-number-alphabet {
+    padding: 0 6px;
+    margin: 0 15px;
+    color: $textColorWhite;
+    font-weight: 500;
+    display: inline-flex;
+    font-size: 25px;
+}
+
+.station-number-tansui {
+    background-color: #03872f;
+}
+
+.station-number-kawashimo {
+    background-color: #f03c24;
+}

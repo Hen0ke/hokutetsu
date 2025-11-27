@@ -1,0 +1,256 @@
+---
+
+const { frontmatter } = Astro.props;
+import "/src/styles/hokutetsu_railway_default.scss";
+
+---
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{frontmatter.title}</title>
+        <link rel="icon" href="/hokutetsu/favicon.ico" />
+        <script 
+        src="https://code.jquery.com/jquery-3.6.1.min.js" 
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" 
+        crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+        <meta name="robots" content="noindex, nofollow">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="header-element">
+                <div class="header-logo">
+                    <a href="/hokutetsu/railway/"><img src="/hokutetsu/images/railway_logo.png" alt="Hokutetsu Railway Logo"></a>
+                </div>
+                <div class="header-list">
+                    <ul>
+                        <li class="header-list-item header-list-railway"> 鉄道に乗る <span class="material-icons">keyboard_arrow_down</span></li>
+                        <li class="header-list-item header-list-tourism"> 観光する <span class="material-icons">keyboard_arrow_down</span></li>
+                        <li class="header-list-item header-list-living"> 暮らし・生活 <span class="material-icons">keyboard_arrow_down</span></li>
+                        <li class="header-list-item header-list-corporation"> 企業・採用情報 <span class="material-icons">keyboard_arrow_down</span></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="header-menu">
+            <div class="header-menu-element header-menu-railway">
+                <div class="header-menu-element-content">
+                    <div class="header-menu-left">
+                        <a href="/hokutetsu/railway/train/" class="list-top">鉄道に乗るトップ</a>
+                        <ul>
+                            <li class="header-menu-left-1"><a href="/hokutetsu/railway/train/lines/">路線図・駅情報</a></li>
+                            <li class="header-menu-left-2"><a href="/hokutetsu/railway/train/informations/tickets/">きっぷのご案内</a></li>
+                            <li class="header-menu-left-3"><a href="/hokutetsu/railway/train/informations/dyer/">列車のご案内（乗換検索）</a></li>
+                            <li class="header-menu-left-4"><a href="/hokutetsu/railway/train/express/">北鉄特急のご案内</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-menu-center">
+                        <div class="header-menu-center-element header-menu-center-1 active">
+                            <a href="/hokutetsu/railway/train/lines/" class="list-top">路線図・駅情報トップ</a>
+                            <ul>
+                                <li><a href="/hokutetsu/railway/train/lines#sec1">路線図</a></li>
+                                <li><a href="/hokutetsu/railway/train/lines#sec2">路線情報</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-menu-center-element header-menu-center-2">
+                            <a href="/railway/train/tickets/" class="list-top">きっぷのご案内トップ</a>
+                            <ul>
+                                <li><a href="/hokutetsu/railway/train/informations/tickets/single">きっぷの種類</a></li>
+                                <li><a href="/hokutetsu/railway/train/informations/tickets/single">乗車券のご案内</a></li>
+                                <li><a href="/hokutetsu/railway/train/informations/tickets/express">特急券のご案内</a></li>
+                                <li><a href="/hokutetsu/railway/train/informations/tickets/commuter">定期券</a></li>
+                                <li><a href="/hokutetsu/railway/train/informations/tickets/spacial">おトクな切符</a></li>
+                                <li><a href="/hokutetsu/railway/train/informations/tickets/ic-card">ICカードのご案内</a></li>
+                                <li><a href="/hokutetsu/railway/train/informations/railway-rule">旅客営業規則</a></li>
+                            </ul>
+                        </div>
+                        <div class="header-menu-center-element header-menu-center-3">
+                            <a href="/hokutetsu/railway/train/informations/dyer" class="list-top">列車のご案内（乗換検索）トップ</a>
+                        </div>
+                        <div class="header-menu-center-element header-menu-center-4">
+                            <a href="/hokutetsu/railway/train/express" class="list-top">北鉄特急のご案内トップ</a>
+                            <ul>
+                                <li><a href="/hokutetsu/railway/train/express#sec1">運賃・乗車方法</a></li>
+                                <li><a href="/hokutetsu/railway/train/express#sec2">運行系統</a></li>
+                                <li><a href="/hokutetsu/railway/train/express#sec3">時刻表</a></li>
+                                <li><a href="/hokutetsu/railway/train/express#sec4">特急列車のサービス</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-menu-right">
+                        <div class="header-menu-right-content">
+                            <div class="element">
+                                <a href="/hokutetsu/railway/train/status">
+                                <span class="material-icons">
+                                railway_alert
+                                </span><br>
+                                列車運行情報
+                                </a>
+                            </div>
+                            <div class="side-parallel">
+                                <div class="element">
+                                    <a href="/hokutetsu/railway/train/status">
+                                    <span class="material-icons">
+                                    access_time_filled
+                                    </span><br>
+                                    乗換検索
+                                    </a>
+                                </div>
+                                <div class="element">
+                                    <a href="/hokutetsu/railway/train/status">
+                                    <span class="material-icons">
+                                    map
+                                    </span><br>
+                                    駅・時刻表検索
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-menu-element header-menu-tourism">
+
+            </div>
+            <div class="header-menu-element header-menu-living">
+
+            </div>
+            <div class="header-menu-element header-menu-corporation">
+                <div class="header-menu-element-content">
+                    <div class="header-menu-left">
+                        <a href="/hokutetsu/railway/corporation/" class="list-top">企業・採用情報トップ</a>
+                        <ul>
+                            <li class="header-menu-left-41"><a href="/hokutetsu/railway/corporation/overview">会社情報</a></li>
+                            <li class="header-menu-left-42"><a href="/hokutetsu/railway/corporation/business/">事業内容</a></li>
+                            <li class="header-menu-left-43"><a href="/hokutetsu/railway/shiryokan/">北鉄資料館</a></li>
+                            <li class="header-menu-left-44"><a href="/hokutetsu/railway/recruit/">採用情報</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-menu-center">
+                        <div class="header-menu-center-element header-menu-center-41 active">
+                            <a href="/hokutetsu/railway/corporation/overview" class="list-top">会社情報トップ</a>
+                            <ul>
+                                <li><a href="/hokutetsu/railway/corporation/overview#sec1">会社概要</a></li>
+                                <li><a href="/hokutetsu/railway/corporation/overview#sec2">組織図</a></li>
+                                <li><a href="/hokutetsu/railway/corporation/overview#sec3">経営理念・コーポレートスローガン</a></li>
+                                <li><a href="/hokutetsu/railway/corporation/overview#sec4">コーポレートアイデンティティ・ロゴ</a></li>
+                                <li><a href="/hokutetsu/railway/corporation/overview#sec5">社章について</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-menu-right">
+                        <div class="header-menu-right-content">
+                            <div class="element">
+                                <a href="/hokutetsu/group/">
+                                <span class="material-icons">
+                                business
+                                </span><br>
+                                北鉄グループ情報
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-menu-shadow">
+
+        </div>
+        </section>
+        <script>
+            $(function(){
+                $(window).on("scroll", function() {
+                    let scroll = $(window).scrollTop() || 0;
+                    console.log(scroll);
+
+                    if (scroll > 10) {
+                        $("header").addClass("scrolled");
+                    } else {
+                        $("header").removeClass("scrolled");
+                    }
+                });
+
+                $(".header-list-item").on("click", function(){
+                    if (!$(this).hasClass("clicked")) {
+                        $(".header-list-item").removeClass("clicked");
+                        $(this).addClass("clicked");
+                    } else {
+                        $(".header-list-item").removeClass("clicked");
+                    }
+                });
+
+                $(".header-list-railway").on("click", function(){
+                    if (!$(".header-menu-railway").hasClass("active")) {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu-railway").addClass("active");
+                        $(".header-menu").addClass("active");
+                    } else {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu").removeClass("active");
+                    }
+                });
+
+                $(".header-list-tourism").on("click", function(){
+                    if (!$(".header-menu-tourism").hasClass("active")) {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu-tourism").addClass("active");
+                        $(".header-menu").addClass("active");
+                    } else {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu").removeClass("active");
+                    }
+                });
+
+                $(".header-list-living").on("click", function(){
+                    if (!$(".header-menu-living").hasClass("active")) {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu-living").addClass("active");
+                        $(".header-menu").addClass("active");
+                    } else {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu").removeClass("active");
+                    }
+                });
+
+                $(".header-list-corporation").on("click", function(){
+                    if (!$(".header-menu-corporation").hasClass("active")) {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu-corporation").addClass("active");
+                        $(".header-menu").addClass("active");
+                    } else {
+                        $(".header-menu-element").removeClass("active");
+                        $(".header-menu").removeClass("active");
+                    }
+                });
+
+                $(".header-menu-shadow").on("click", function() {
+                    $(".header-list-item").removeClass("clicked");
+                    $(".header-menu").removeClass("active");
+                    $(".header-menu-element").removeClass("active");
+                });
+
+                $(".header-menu-left ul li").hover(function() {
+                    const classes = $(this).attr('class');
+                    if (classes) {
+                        const match = classes.match(/header-menu-left-(\d+)/);
+                        if (match) {
+                            $(".header-menu-center-element").removeClass("active");
+                            $(".header-menu-center-" + match[1]).addClass("active");
+                        }
+                    }
+                }, function() {});
+            });
+        </script>
+        <div>
+            <article>
+                <slot />
+            </article>
+        </div>
+        <footer>
+            <p>Copyright© Hokutetsu Railway All-rights Reserved.</p>
+        </footer>
+    </body>
+</html>
