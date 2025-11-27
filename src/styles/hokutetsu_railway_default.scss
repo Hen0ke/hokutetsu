@@ -435,6 +435,11 @@ header.scrolled {
 footer { 
     background-color: $mainColor;
 
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
     .contents {
         margin: 0 auto;
         max-width: 1280px;
@@ -454,6 +459,10 @@ article {
 }
 
 .train-status {
+    * {
+            padding: 0;
+            margin: 0;
+    }
 
     .line-zone-tab ul {
         display: flex;
@@ -478,8 +487,13 @@ article {
     }
 
     .train-status-contents {
+        .station-number-alphabet {
+            padding: 0 6px;
+            margin: 0 15px;
+        }
+
         display: flex;
-        height: calc(100vh - 200px);
+        height: calc(100vh - 209px);
 
         .line-list {
             flex: 1;
@@ -510,7 +524,7 @@ article {
 
             .lines {
                 overflow-y: scroll;
-                height: calc(100% - 50px);
+                height: calc(100% - 60px);
 
                 .element {
                     border-bottom: $textColorBlack 1px solid;
