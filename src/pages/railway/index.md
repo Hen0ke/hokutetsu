@@ -1,6 +1,6 @@
 ---
 # src/pages/my-first-post.md
-layout: ./src/layouts/defaultHokutetsuRailwayPagesLayout.astro
+layout: ./hokutetsu/layouts/defaultHokutetsuRailwayPagesLayout.astro
 title: 'トップページ'
 pubDate: 2025-09-28
 description: 'Hokutetsu Railway Top Page'
