@@ -1,6 +1,6 @@
 ---
 # src/pages/my-first-post.md
-layout: ./hokutetsu/layouts/defaultHokutetsuRailwayPagesLayout.astro
+layout: /src/layouts/defaultHokutetsuRailwayPagesLayout.astro
 title: '列車運行情報'
 pubDate: 2025-11-23
 description: 'Hokutetsu Railway Lines Status'
